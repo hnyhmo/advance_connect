@@ -1,0 +1,129 @@
+@media only screen and (min-width: 920px) {
+  .toggle {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  .main-nav {
+    opacity: 1;
+    pointer-events: all;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0;
+    flex-direction: row;
+    padding-right: 1rem;
+    height: 100%;
+    .nav-item {
+      position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      flex-direction: row;
+    }
+    .btn {
+      height: auto;
+      padding: 1rem;
+    }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      white-space: nowrap;
+      left: 0;
+      top: 99%;
+      background-color: hsl(0deg, 0%, 95%);
+      padding: 0.5rem 0;
+      .nav-dropdown {
+        display: block;
+        position: static;
+        padding-left: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        a {
+          border-left: 2px solid $neutral-1;
+          font-size: 1rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  body,
+  html {
+    font-size: 17px;
+  }
+  .main-header {
+    height: 6rem;
+    .container {
+      height: 100%;
+      padding: 0 4rem;
+    }
+  }
+  .main-section {
+    margin-top: 6rem;
+  }
+  .container {
+    padding: 4rem;
+  }
+  .main-banner {
+    .slide {
+      padding: 4rem;
+    }
+  }
+  .main-header,
+  .main-footer {
+    .container {
+      max-width: none;
+    }
+  }
+
+  .grid-3.contact-grid {
+    grid-template-columns: 20rem 1fr;
+  }
+  .grid-4.contact-form {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    h2,
+    p {
+      margin: 0;
+    }
+    .full {
+      grid-column: span 4;
+    }
+    .full.message {
+      grid-column: 3 / span 2;
+      grid-row: 3 / span 2;
+      textarea {
+        min-height: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+    .full {
+      grid-column: span 2;
+    }
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .brands-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .main-footer {
+    font-size: 1rem;
+    .container {
+      padding: 4rem;
+    }
+    .footer-logo img {
+      margin: 0;
+    }
+  }
+}
